@@ -1,0 +1,38 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+
+# Python generated files #
+##########################
+__pycache__/
+*.py[cod]
+web_dev/web_env/*
+
+# Django
+**/db.sqlite3
+*.sqlite3
+**/.env
+*.log
+*.pot
+**/portfolio/migrations/*
+
+# Gulp dirs for dev #
+#####################
+.eslintrc
+.babelrc
+
+node_modules/*
+!node_modules/.gitkeep
+
+# Ignore directories that are compiled from Gulp + uploaded
+**/static/temp/*
+**/static/prod/*
+# !static/.gitkeep
+
+############################################
+# SASS
+*.scssc
+*.map
+.sass-cache
