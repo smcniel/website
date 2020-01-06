@@ -8,7 +8,7 @@
 ##########################
 __pycache__/
 *.py[cod]
-web_dev/web_env/*
+web_env/*
 
 # Django
 **/db.sqlite3
