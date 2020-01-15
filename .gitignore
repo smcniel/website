@@ -18,13 +18,19 @@ web_env/*
 *.pot
 **/portfolio/migrations/*
 
-# Gulp dirs for dev #
+# GULP for develop #
 #####################
 .eslintrc
 .babelrc
 
 node_modules/*
 !node_modules/.gitkeep
+
+**/dev_assets/fonts/*
+!**/dev_assets/fonts/.gitkeep
+
+**/dev_assets/img/*
+!**/dev_assets/img/.gitkeep
 
 # Ignore directories that are compiled from Gulp + uploaded
 **/static/temp/*

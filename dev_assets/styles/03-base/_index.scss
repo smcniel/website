@@ -1,0 +1,30 @@
+//
+// Base
+//
+// Import any reset styling here, along with base elements, such as <div>, <header>,
+// <footer>, <main>, and <nav>, for example.
+//
+// Eric Meyer’s reset CSS document is included here as “_reset.scss.” It’s available
+// at http://meyerweb.com/eric/tools/css/reset/reset.css
+//
+@import 'reset';
+@import 'body';
+
+*,
+*::after,
+*::before {
+  // this pushes the padding and border inside the box
+  // so width 100 px is actually 100px
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  font-family: 'HalisR';
+  font-size: 2rem;
+  font-weight: 500;
+}

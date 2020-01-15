@@ -1,0 +1,45 @@
+// <link rel="preload" as="font" href="/fonts/custom-font.woff2" type="font/woff2" crossorigin="anonymous">
+//
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,700&display=swap');
+
+// black: 900, bold: 700, medium: 500, reg: 400, book: 300, light: 200, elight: 100;
+// src path needs to relative to compiled css file
+@font-face {
+  font-family: 'HalisR';
+  src: url('../fonts/halisr-bold-webfont.woff2') format('woff2'),
+    url('../fonts/halisr-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: U+000-5FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HalisR';
+  src: url('../fonts/halisr-medium-webfont.woff2') format('woff2'),
+    url('../fonts/halisr-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: U+000-5FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HalisR';
+  src: url('../fonts/halisr-regular-webfont.woff2') format('woff2'),
+    url('../fonts/halisr-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+000-5FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HalisR';
+  src: url('../fonts/halisr-book-webfont.woff2') format('woff2'),
+    url('../fonts/halisr-book-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+000-5FF;
+  font-display: swap;
+}
