@@ -1,0 +1,310 @@
+// =============================================================================
+// Type
+// =============================================================================
+
+// scale perfect 5th
+// 16, 24, 36, 54 (48?), 81 (80?
+.f1 { font-size: 3rem; } // 48px
+.f2 { font-size: 2.25rem; } // 36px
+.f3 { font-size: 1.5rem; } // 24px
+.f4 { font-size: 1.25rem; } // 20px
+.f5 { font-size: 1rem; } // 16px
+.f6 { font-size: .875rem; } // 14px
+.f7 { font-size: .75rem; } // 12px
+.f-hero { font-size: 9rem; } // 144px
+.f-herosm { font-size: 8rem; } // 128px
+.f-headline { font-size: 6rem; } // 96px
+.f-subheadline { font-size: 5rem; } // 80
+
+@media screen and (min-width: 480px) {
+  // .f-6-ns,
+  .f-hero-ns { font-size: 9rem; }
+  .f-herosm-ns { font-size: 8rem; }
+  .f-headline-ns { font-size: 6rem; }
+  // .f-5-ns,
+  .f-subheadline-ns { font-size: 5rem; }
+  .f1-ns { font-size: 3rem; }
+  .f2-ns { font-size: 2.25rem; }
+  .f3-ns { font-size: 1.5rem; }
+  .f4-ns { font-size: 1.25rem; }
+  .f5-ns { font-size: 1rem; }
+  .f6-ns { font-size: .875rem; }
+  .f7-ns { font-size: .75rem; }
+}
+
+@media screen and (min-width: 768px) {
+  // .f-6-m,
+  .f-hero-m { font-size: 9rem; }
+  .f-herosm-m { font-size: 8rem; }
+  .f-headline-m { font-size: 6rem; }
+  // .f-5-m,
+  .f-subheadline-m { font-size: 5rem; }
+  .f1-m { font-size: 3rem; }
+  .f2-m { font-size: 2.25rem; }
+  .f3-m { font-size: 1.5rem; }
+  .f4-m { font-size: 1.25rem; }
+  .f5-m { font-size: 1rem; }
+  .f6-m { font-size: .875rem; }
+  .f7-m { font-size: .75rem; }
+}
+
+@media screen and (min-width: 960px) {
+  // .f-6-l,
+  .f-hero-l { font-size: 9rem; }
+  .f-herosm-l { font-size: 8rem; }
+  .f-headline-l { font-size: 6rem; }
+  // .f-5-l,
+  .f-subheadline-l { font-size: 5rem; }
+  .f1-l { font-size: 3rem; }
+  .f2-l { font-size: 2.25rem; }
+  .f3-l { font-size: 1.5rem; }
+  .f4-l { font-size: 1.25rem; }
+  .f5-l { font-size: 1rem; }
+  .f6-l { font-size: .875rem; }
+  .f7-l { font-size: .75rem; }
+}
+// // take out and condense to actual h1, p base elements?
+// // currently only using on halis, default body set
+.normal { font-weight: normal; }
+.b      { font-weight: bold; }
+.fw3    { font-weight: 300; } // book
+.fw4    { font-weight: 400; } // normal C & H
+.fw5    { font-weight: 500; } // medium
+.fw7    { font-weight: 700; } // bold C & H
+// .fw9    { font-weight: 900; } // black, n/a
+
+@media screen and (min-width: 480px) {
+  .normal-ns { font-weight: normal; }
+  .b-ns      { font-weight: bold; }
+  .fw3-ns    { font-weight: 300; } // book
+  .fw4-ns    { font-weight: 400; } // normal C & H
+  .fw5-ns    { font-weight: 500; } // medium
+  .fw7-ns    { font-weight: 700; } // bold C & H
+}
+
+@media screen and (min-width: 768px) {
+  .normal-m { font-weight: normal; }
+  .b-m      { font-weight: bold; }
+  .fw3-m    { font-weight: 300; } // book
+  .fw4-m    { font-weight: 400; } // normal C & H
+  .fw5-m    { font-weight: 500; } // medium
+  .fw7-m    { font-weight: 700; } // bold C & H
+}
+
+@media screen and (min-width: 960px) {
+  .normal-l { font-weight: normal; }
+  .b-l      { font-weight: bold; }
+  .fw3-l    { font-weight: 300; } // book
+  .fw4-l    { font-weight: 400; } // normal C & H
+  .fw5-l    { font-weight: 500; } // medium
+  .fw7-l    { font-weight: 700; } // bold C & H
+}
+
+.tl  { text-align: left; }
+.tr  { text-align: right; }
+.tc  { text-align: center; }
+
+@media screen and (min-width: 480px) {
+  .tl-ns  { text-align: left; }
+  .tr-ns  { text-align: right; }
+  .tc-ns  { text-align: center; }
+  .tj-ns  { text-align: justify; }
+}
+
+@media screen and (min-width: 768px) {
+  .tl-m  { text-align: left; }
+  .tr-m  { text-align: right; }
+  .tc-m  { text-align: center; }
+  .tj-m  { text-align: justify; }
+}
+
+@media screen and (min-width: 960px) {
+  .tl-l  { text-align: left; }
+  .tr-l  { text-align: right; }
+  .tc-l  { text-align: center; }
+  .tj-l  { text-align: justify; }
+}
+// =============================================================================
+// Spacing
+// =============================================================================
+// // http://tachyons.io/docs/layout/spacing/
+// // An eight step powers of two scale ranging from 0 to 16rem.
+.pa0 { padding: 0; }
+.pa1 { padding: .25rem; } //4
+.pa2 { padding: .5rem; }
+.pa3 { padding: .75rem; } // 12
+.pa4 { padding: 1rem; }
+.pa5 { padding: 2rem; } // 32
+.pa6 { padding: 40px; }
+.ph5 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 480px) {
+  .pa0-ns { padding: 0; }
+  .pa1-ns { padding: .25rem; } //4
+  .pa2-ns { padding: .5rem; }
+  .pa3-ns { padding: .75rem; } // 12
+  .pa4-ns { padding: 1rem; }
+  .pa5-ns { padding: 2rem; } // 32
+  .pa6-ns { padding: 40px; }
+  .ph5-ns {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pa0-m { padding: 0; }
+  .pa1-m { padding: .25rem; } //4
+  .pa2-m { padding: .5rem; }
+  .pa3-m { padding: .75rem; } // 12
+  .pa4-m { padding: 1rem; }
+  .pa5-m { padding: 2rem; } // 32
+  .pa6-m { padding: 40px; }
+  .ph5-m {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pa0-l { padding: 0; }
+  .pa1-l { padding: .25rem; } //4
+  .pa2-l { padding: .5rem; }
+  .pa3-l { padding: .75rem; } // 12
+  .pa4-l { padding: 1rem; }
+  .pa5-l { padding: 2rem; } // 32
+  .pa6-l { padding: 40px; }
+  .ph5-l {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.ma0 { padding: 0; }
+.ma1 { padding: .25rem; } //4
+.ma2 { padding: .5rem; }
+.ma3 { padding: .75rem; } // 12
+.ma4 { padding: 1rem; }
+.ma5 { padding: 2rem; } // 32
+.ma6 { padding: 40px; }
+
+.mv5 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 480px) {
+  .ma0-ns { padding: 0; }
+  .ma1-ns { padding: .25rem; } //4
+  .ma2-ns { padding: .5rem; }
+  .ma3-ns { padding: .75rem; } // 12
+  .ma4-ns { padding: 1rem; }
+  .ma5-ns { padding: 2rem; } // 32
+  .ma6-ns { padding: 40px; }
+}
+
+@media screen and (min-width: 768px) {
+  .ma0-m { padding: 0; }
+  .ma1-m { padding: .25rem; } //4
+  .ma2-m { padding: .5rem; }
+  .ma3-m { padding: .75rem; } // 12
+  .ma4-m { padding: 1rem; }
+  .ma5-m { padding: 2rem; } // 32
+  .ma6-m { padding: 40px; }
+  .mv5-m {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .ma0-l { padding: 0; }
+  .ma1-l { padding: .25rem; } //4
+  .ma2-l { padding: .5rem; }
+  .ma3-l { padding: .75rem; } // 12
+  .ma4-l { padding: 1rem; }
+  .ma5-l { padding: 2rem; } // 32
+  .ma6-l { padding: 40px; }
+  .mv5-l {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+// =============================================================================
+// Flex
+// =============================================================================
+// padding on parent row, margin on child item - check b/c padding sees color
+
+// .flexrow {
+//   @include flexbox();
+//   flex-wrap: wrap;
+//   list-style: none;
+// }
+// @media screen and (min-width: 768px) {
+//   .flexrow-m {
+//     padding: 2rem .75rem;
+//   }
+.flexcol {
+  @include flexbox();
+  @include flex-direction(column);
+  // align-items: center;
+  align-content: center;
+  justify-content: center;
+  // height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .flexcol {
+    height: 100vh;
+  }
+}
+
+// // %flex-child-item {
+// //   margin: 20px;
+// // }
+
+// // absolutely positioned  flex children ignore flex properties
+.about-title {
+  // @include flex(1);
+}
+.about-text {
+  // @include flex(1);
+  max-width: 800px;
+  margin-left: auto;
+  // column-count: 2;
+  // column-gap: 20px;
+  p {
+    margin: 0 1rem auto;
+    // margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-text {
+    column-count: 2;
+    column-gap: 1.5rem;
+  }
+}
+
+
+// .flex-row-full {
+//   @extend %flex-parent-row;
+//   .child-item {
+//     @include flex(0 0 100%);
+//   }
+// }
+
+// .flex-row-fit {
+//   @extend %flex-parent-row;
+//   .child-item {
+//     @include flex(1);
+//   }
+// }
+
+

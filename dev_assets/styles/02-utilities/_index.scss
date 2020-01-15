@@ -1,0 +1,111 @@
+//
+// Utilities
+//
+// Import the basic utilities that other components in your project will require and
+// that don’t change. For example, color palettes, global variables, mixins, etc.
+//
+
+// =============================================================================
+// Colors
+// =============================================================================
+$color-pink: #dcb6b3;
+$color-pink-02: #e4c7c4;
+$color-pink-01: #ecd8d6;
+$color-pink-00: #f4e8e7;
+$color-lt-gray: #e7e7e7;
+$color-ltest-gray: #f3f3f4;
+// monochromatic dk to lt
+$color-teal: #92eae5;
+$color-teal-03: #bdf2ef;
+$color-teal-01: #d2f6f4;
+$color-teal-00: #e8faf9;
+
+// $color-lt-gray: #f1f1f1;
+// same family
+$color-body-lt: #f3f3f4;
+$color-bg-dk2: #404345;
+$color-bg-dk: #2d2f31;
+
+$color-bright-blue: #42CAFD;
+// =============================================================================
+// Fonts
+// =============================================================================
+$font-size-base: 16px;
+
+// =============================================================================
+// Mixins
+// =============================================================================
+
+// @mixin ns {
+//    @media screen and (min-width: 480px) and (max-width: 767px) { {
+//        @content;
+//    }
+// }
+
+// // Medium devices
+// @mixin md {
+//    @media (min-width: #{$screen-md-min}) {
+//        @content;
+//    }
+// }
+
+// // Large devices
+// @mixin lg {
+//    @media (min-width: #{$screen-lg-min}) {
+//        @content;
+//    }
+// }
+
+// // Extra large devices
+// @mixin xl {
+//    @media (min-width: #{$screen-xl-min}) {
+//        @content;
+//    }
+// }
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+// div {@include flexbox();}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -ms-flex: $values;
+  -webkit-flex: $values;
+  flex: $values;
+}
+// div {@include flex(1,2);}
+
+@mixin flex-order($order) {
+  -webkit-box-ordinal-group: $order; // old
+  -moz-box-ordinal-group: $order;  // old
+  -ms-flex-order: $order;  // ie
+  -webkit-order: $order;  // new
+  order: $order;  // new
+}
+// div { @include flex-order(3); }
+
+@mixin flex-direction($direction) {
+  @if $direction == column {
+    -webkit-flex-direction: vertical;
+    -moz-flex-direction: vertical;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  @else {
+    -webkit-flex-direction: horizontal;
+    -moz-flex-direction: horizontal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+}
+// div {@include flex-direction(column);}
+
+
