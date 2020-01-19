@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <h1>HELLO!</h1>
+  <p>{{ project.title }}</p>
+  {% for photo in photo_list %}
+  <div>
+    {% static "" as baseUrl %}
+    <img src="{{ baseUrl }}/img/{{ photo.filename }}">
+  </div>
+  {% endfor %}
+{% endblock content %}
