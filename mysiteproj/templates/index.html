@@ -2,6 +2,11 @@
 
 {% block content %}
 <section>
-  <h1>HELLO! Under construction but back up soon.</h1>
+  <h1>HELLO!</h1>
+  {% for project in project_list %}
+  <ul>
+    <li><a href="{{ project.get_absolute_url }}">{{ project.title }}</a></li>
+  </ul>
+  {% endfor %}
 </section>
 {% endblock content %}
