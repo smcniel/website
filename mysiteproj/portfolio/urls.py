@@ -1,15 +1,13 @@
 """Django portfolio app urls."""
 
 from django.urls import path
-# from django.conf.urls import url
-# from django.contrib import admin
 
-from . import views
+# fix this/ clean up
+# from . import views
+from .views import ProjectDetail, HomeView
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    # path('', views.index, name='index'),
+    path('', HomeView.as_view(), name='home'),
+    path('<slug:slug>', ProjectDetail.as_view(), name="project-detail"),
 ]
-# urlpatterns = [
-#     url(r'^$', views.index, name='index'),
-#     url(r'^admin/', admin.site.urls),
-# ]

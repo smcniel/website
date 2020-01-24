@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <h1>HELLO!</h1>
+  <p>{{ project.title }}</p>
+  {% for tech in project.tech_list %}
+  <ul>
+    <li><p>{{ tech }}</p></li>
+  </ul>
+  {% endfor %}
+  {% for photo in photo_list %}
+  <div>
+    {% static "" as baseUrl %}
+    <img src="{{ baseUrl }}/img/{{ photo.image_lg }}">
+  </div>
+  {% endfor %}
+{% endblock content %}

@@ -10,7 +10,11 @@ TEMPLATE_DEBUG = DEBUG
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 # TEMPLATE_LOCATION = config('TEMPLATE_LOCATION')
 
-# Application definition
+# Needed for django debug toolbar
+if DEBUG:
+    INTERNAL_IPS = [
+        '127.0.0.1',
+    ]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -22,6 +26,12 @@ INSTALLED_APPS = [
     'portfolio',
 ]
 
+if DEBUG:
+    INSTALLED_APPS += [
+        'django_extensions',
+        'debug_toolbar',
+    ]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -31,6 +41,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+if DEBUG:
+    MIDDLEWARE += [
+        'debug_toolbar.middleware.DebugToolbarMiddleware',
+    ]
 
 ROOT_URLCONF = 'mysite.urls'
 
@@ -87,3 +102,7 @@ STATICFILES_DIRS = [
 ]
 if not DEBUG:
     STATIC_ROOT = config('STATIC_ROOT')
+
+# no uploading via django
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
